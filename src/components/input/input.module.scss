@@ -1,0 +1,49 @@
+.inputWrapper {
+  position: relative;
+
+  .input {
+    width: 100%;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: 1px solid #90A4AE;
+    border-radius: 8px;
+  }
+
+  input:focus {
+    outline: none;
+    border: 1px solid #2196F3;
+  }
+
+  input:focus + .label .text,
+  .inputWithValue {
+    transition: 0.3s ease;
+    font-size: 12px;
+    transform: translate(0, -140%);
+    background-color: white;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: #2196F3;
+  }
+
+  input:not(:focus) + .label .inputWithValue {
+    color: #424242;
+  }
+
+  //input:internal-autofill-selected {
+  //  background-color: #fff;
+  //}
+
+  .label {
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -80%);
+    bottom: 0;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+  }
+}
+
