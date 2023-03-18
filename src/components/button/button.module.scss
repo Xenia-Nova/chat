@@ -1,0 +1,23 @@
+.button {
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  padding: 10px 20px;
+  background: #ffffff;
+  box-shadow:  9px 9px 18px #e0e0e0,
+  -9px -9px 18px #ffffff;
+  font-weight: 400;
+
+
+  &:hover {
+    cursor: pointer;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow:  9px 9px 18px #e0e0e0,
+    -9px -9px 18px #ffffff;
+  }
+  &:active {
+    background: #ffffff;
+    box-shadow: inset 9px 9px 18px #e0e0e0,
+    inset -9px -9px 18px #ffffff;
+  }
+}
